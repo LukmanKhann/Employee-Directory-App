@@ -5,13 +5,14 @@ import CreateEmp from "./Projectx/CreateEmp";
 import Home from "./Projectx/Home";
 import EditEmp from "./Projectx/EditEmp"
 import Search from "./Projectx/Search";
+import Image from "./Projectx/Image";
 
 const App = () => {
   return (
     <div>
       
-      <BrowserRouter>
-      {/* <Home/>  */}
+      {/* <BrowserRouter>
+      <Home/> 
            <Routes> 
            <Route path="/" element={<LoginValidation />} />
            <Route path="/" element={<Home/>} /> 
@@ -23,9 +24,11 @@ const App = () => {
           
         </Routes>
        
-      </BrowserRouter>
+      </BrowserRouter> */}
+      
       {/* <CreateEmp/> */}
       {/* <Search/> */}
+      <Image/>
     
     </div>
   )
