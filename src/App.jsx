@@ -6,6 +6,7 @@ import Home from "./Projectx/Home";
 import EditEmp from "./Projectx/EditEmp"
 import Search from "./Projectx/Search";
 import Image from "./Projectx/Image";
+import Slider from "./Projectx/Slider";
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
       
       {/* <CreateEmp/> */}
       {/* <Search/> */}
-      <Image/>
+      {/* <Image/> */}
+      <Slider/>
     
     </div>
   )

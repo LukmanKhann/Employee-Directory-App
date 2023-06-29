@@ -1,0 +1,44 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* transition: 0.4s ease-in; */
+}
+
+#S1{
+    background-color: rgb(217, 220, 225);
+height: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#S1>h2{
+    font-size: 29px;
+}
+
+#sliderbox{
+    background-color: rgb(236,240,245);
+ height: 300px;
+ width: 80%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: 1px 1px 1px black;
+ flex-direction: column;
+ 
+}
+#sliderbox:hover{
+    box-shadow: 2px 3px 5px black;
+}
+#sliderbox>h4{
+    position: relative;
+    left: 360px;
+    top: 66px;
+    font-size: 28px;
+}
+
+#sliderbox>input[type="range"]{
+    width: 60%;
+    background-color: aqua;
+}
