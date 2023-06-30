@@ -16,22 +16,25 @@ const Home = () => {
                 </li>
                 <li id={stylee.link}><a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i>Link</a>
                 <ul id={stylee.droptwo}>
-                  <li><a href="">Image</a></li>
-                  <li><a href="">Slider</a></li>
-                  <li><a href="">Login-Page</a></li>
+                  <li><Link to={"/path-image"}>Image</Link></li>
+                  <li><Link to={"/path-slider"}>Slider</Link></li>
+                  <li><Link to={"/"}>Login-Page</Link></li>
                   <li><a href="">Notes</a></li>
-                  <li><a href="">Css Properties</a></li>
+                  <li><Link to={"/path-loadinganimation"}>Loading Animation</Link></li>
+                  <li><Link to={"/path-popup"}>PopUps</Link></li>
+                  <li><Link to={"/path-quotegenerator"}>Quote Generator</Link></li>
                 </ul>
                 
                 </li>
                 <li><a href=""><i class="fa-solid fa-gear"></i>Settings</a></li>
+                
               </ul>
             </nav>
 
           </div>
           <div id={stylee.rightdiv}>
           
-               <button><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+               <button><i class="fa-solid fa-right-from-bracket"></i><Link to={"/"}>Logout</Link></button>
           </div>
       </div>
       

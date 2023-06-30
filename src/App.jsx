@@ -7,13 +7,20 @@ import EditEmp from "./Projectx/EditEmp"
 import Search from "./Projectx/Search";
 import Image from "./Projectx/Image";
 import Slider from "./Projectx/Slider";
+import Popup from "./Projectx/Popup";
+import Quote from "./Projectx/Quote"
+import LoadingAnimation from "./Projectx/LoadingAnimation"
+import Links from "./Projectx/Links";
+
 
 const App = () => {
   return (
     <div>
+      {/* <Quote/> */}
+      {/* <LoadingAnimation/> */}
       
       {/* <BrowserRouter>
-      <Home/> 
+   
            <Routes> 
            <Route path="/" element={<LoginValidation />} />
            <Route path="/" element={<Home/>} /> 
@@ -22,16 +29,22 @@ const App = () => {
           <Route path="/path-search" element={<Search/>}></Route>
           <Route path="/path-createemployee" element={<CreateEmp/>} ></Route>
           <Route path="/path-editemployee" element ={<EditEmp/>}></Route>
+          <Route path="/path-image" element={<Image/>}></Route>
+          <Route path="/path-slider" element={<Slider/>}></Route>
+          <Route path="/path-popup" element={<Popup/>}></Route>
+          <Route path="/path-quotegenerator" element={<Quote/>}></Route>
+          <Route path="/path-loadinganimation" element={<LoadingAnimation/>}></Route>
           
         </Routes>
        
       </BrowserRouter> */}
-      
+      <Links/>
       {/* <CreateEmp/> */}
       {/* <Search/> */}
       {/* <Image/> */}
-      <Slider/>
-    
+      {/* <Slider/> */}
+   {/* <Popup/> */}
+   
     </div>
   )
 }

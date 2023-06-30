@@ -16,7 +16,7 @@ const Slider = () => {
           
            <h2>Slider</h2>
           <div id={style.sliderbox}>
-          <h4>Current Slider Value :{slide}</h4>
+          <h4>Current Slider Value : {slide}</h4>
             <input type="range" name="" id="" onChange={handleslider} /> 
           </div>
         </div>

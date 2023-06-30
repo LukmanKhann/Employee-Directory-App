@@ -1,0 +1,70 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#mainquote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(225, 228, 233);
+    height: 800px;
+    width: 100%;
+}
+#quotebox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(236,240,245);
+    height: 600px;
+    width: 900px;
+    box-shadow: 1px 1px 2px black;
+    
+}
+#quotebox1:hover{
+    box-shadow:  3px 3px 5px black;
+    transform: translateX(1px);
+}
+#quotebox1>h2{
+   position: relative;
+   bottom: 60px;
+   text-decoration: underline;
+   color: rgb(47, 45, 43);
+}
+#quotebox1>button{
+    height: 38px;
+    width: 150px;
+    margin-top: 15px;
+    border: 1px solid rgb(187, 182, 182);
+    background-color: rgb(80, 163, 143);
+    box-shadow: 1px 1px 2px gray;
+}
+#quotebox1>button:hover{
+    box-shadow: 1px 2px 3px black;
+    background-color: rgb(221, 231, 231);
+      border: 1px solid rgb(88, 82, 82);
+}
+/* #quotebox2{
+    background-color: rgb(6, 239, 9);
+    height: 200px;
+    width: 400px;
+} */
+
+#quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(225, 222, 222);
+    height: 150px;
+    width: 100%;
+    border: 1px solid rgb(184, 167, 167);
+    
+
+}
+#quote:hover{
+ transform: translateX(1px);
+ box-shadow: 1px 2px 2px black;
+}

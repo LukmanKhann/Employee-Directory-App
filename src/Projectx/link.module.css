@@ -1,0 +1,39 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#linkbox{
+    height: 800px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* working link box */
+#workinglink{
+    height: 200px;
+    width: 400px;
+    background-color: brown;
+}
+/* broken link box */
+#brokenlink{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(15, 193, 65);
+}
+/* status link box */
+#statuscodelink{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(27, 15, 193);
+}
+
+/* image link box */
+#imagelink{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(254, 0, 195);
+}

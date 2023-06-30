@@ -7,7 +7,7 @@
 
 #S1{
     background-color: rgb(217, 220, 225);
-height: 600px;
+height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -41,4 +41,13 @@ flex-direction: column;
 #sliderbox>input[type="range"]{
     width: 60%;
     background-color: aqua;
+    /* animation-name: slider;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite; */
 }
+/* @keyframes slide {
+
+    
+} */

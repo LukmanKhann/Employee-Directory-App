@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* targeting pop up box */
+#popbox1{
+    height: 700px;
+    /* background-color: aqua; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+#popbox1>h6{
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+#popbox3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    height: 300px;
+    width: 90%;
+    background-color: rgb(236,240,245);
+    box-shadow: 1px 1px 1px rgb(2, 2, 9);
+}
+#popbox3:hover{
+    box-shadow: 2px 3px 3px black;
+}
+#popbox3>button{
+    height: 40px;
+    width: 200px;
+    margin-left: 10px;
+    border: 1px solid rgb(185, 185, 185);
+    
+}
+#popbox3>button:hover{
+    background-color: rgb(196, 198, 198);
+    box-shadow: 1px 2px 2px black;
+}
