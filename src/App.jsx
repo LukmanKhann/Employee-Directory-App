@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Task from "./Components/Task";
 import LoginValidation from "./Projectx/LoginValidation"
 import CreateEmp from "./Projectx/CreateEmp";
@@ -19,7 +19,7 @@ const App = () => {
       {/* <Quote/> */}
       {/* <LoadingAnimation/> */}
       
-      {/* <BrowserRouter>
+      <BrowserRouter>
    
            <Routes> 
            <Route path="/" element={<LoginValidation />} />
@@ -34,11 +34,11 @@ const App = () => {
           <Route path="/path-popup" element={<Popup/>}></Route>
           <Route path="/path-quotegenerator" element={<Quote/>}></Route>
           <Route path="/path-loadinganimation" element={<LoadingAnimation/>}></Route>
-          
+          <Route path="/path-link" element={<Links/>}></Route>
         </Routes>
        
-      </BrowserRouter> */}
-      <Links/>
+      </BrowserRouter>
+      {/* <Links/> */}
       {/* <CreateEmp/> */}
       {/* <Search/> */}
       {/* <Image/> */}

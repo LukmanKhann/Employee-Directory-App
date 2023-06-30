@@ -11,12 +11,12 @@ const Search = () => {
                <div>
                <label htmlFor="">Name</label>
                 <br />
-                <input type="text" />
+                <input type="text" placeholder="Enter Name"/>
                </div>
                 <div>  
                 <label htmlFor="">Mobile No</label>
                 <br />
-                <input type="number" name="" id="" />
+                <input type="number" name="" id="" placeholder="Enter Number"/>
                 </div>
                 <button className={style.btn1}>Search</button>
                 <button className={style.btn2}>Clear</button>

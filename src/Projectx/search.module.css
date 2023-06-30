@@ -10,10 +10,12 @@
     /* background-color: red; */
     height: 600px;
     width: 100%;
+    
 }
 
 /* btn employee box */
 #btnemp{
+     background-color: rgb(217,220,225);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -21,6 +23,7 @@
     /* top: 60px; */
     /* background-color: aqua; */
     height: 80px;
+    
 }
 #btnemp>button{
     height: 35px;
@@ -41,6 +44,7 @@
 
 /* name search box */
 #namesearch{
+    background-color: rgb(217,220,225);
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -50,6 +54,7 @@
 }
 
 #namesearch>div{
+    
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -60,11 +65,12 @@
 }
 #namesearch>div>input{
 height: 38px;
-border: 1px solid rgb(230, 221, 221);
+border: 1px solid rgb(185, 177, 177);
 width: 300px;
+text-align: center;
 }
 #namesearch>div>input:hover{
-    background-color: rgb(225, 222, 222);
+    background-color: rgb(228, 225, 225);
    border: 1px solid rgb(103, 99, 94)
 }
 
@@ -107,6 +113,7 @@ width: 300px;
     display: flex;
     justify-content: center;
     align-items: c;
+    background-color: rgb(236,240,245);
 }
 #tablebox>table{
     /* margin: 10px; */

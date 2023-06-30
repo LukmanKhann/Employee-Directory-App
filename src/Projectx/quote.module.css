@@ -40,6 +40,7 @@
     border: 1px solid rgb(187, 182, 182);
     background-color: rgb(80, 163, 143);
     box-shadow: 1px 1px 2px gray;
+    cursor: pointer;
 }
 #quotebox1>button:hover{
     box-shadow: 1px 2px 3px black;

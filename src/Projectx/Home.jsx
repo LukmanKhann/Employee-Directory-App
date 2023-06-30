@@ -19,7 +19,7 @@ const Home = () => {
                   <li><Link to={"/path-image"}>Image</Link></li>
                   <li><Link to={"/path-slider"}>Slider</Link></li>
                   <li><Link to={"/"}>Login-Page</Link></li>
-                  <li><a href="">Notes</a></li>
+                  <li><Link to={"/path-link"}>Portal Links</Link></li>
                   <li><Link to={"/path-loadinganimation"}>Loading Animation</Link></li>
                   <li><Link to={"/path-popup"}>PopUps</Link></li>
                   <li><Link to={"/path-quotegenerator"}>Quote Generator</Link></li>

@@ -7,12 +7,12 @@
 }
 /* targeting nav bar divs */
 #maindiv{
-    box-shadow: 2px 2px 1px 1px black;
+    box-shadow: 2px 2px 3px black;
     height: 97px;
     /* margin-top: 3px; */
-    border: 2px solid rgb(175, 152, 152);
+    /* border: 2px solid rgb(175, 152, 152); */
     display: flex;
-    background-color: #5A7870;
+    background-color: #476b6b;
 }
 #leftdiv{
     height: 80px;
@@ -29,7 +29,7 @@
 }
 
 #rightdiv>button{
-    background-color: #5A7870;
+    background-color: #c3cccc;
     border: 1px solid #44645d;
     height: 50px;
     width: 100px;
@@ -38,7 +38,7 @@
     
 }
 #rightdiv>button:hover{
-    background-color: #4f6762;
+    background-color: #6e8681;
     box-shadow: 1px 1px 2px black;
    
 }
