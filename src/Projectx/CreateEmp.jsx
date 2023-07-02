@@ -13,7 +13,9 @@ const CreateEmp = () => {
     let [country,setCountry] = useState("")
     let navigate = useNavigate()
 
-    let formhandle=()=>{  
+    let formhandle=()=>{
+
+      
       let payload= {firstname,lastname,email,mobile,dob,gender,city,country}
       axios.post("http://localhost:8080/api/v1/employees",payload).then((response)=>{
         console.log("Posted Successfully");
@@ -123,7 +125,7 @@ const CreateEmp = () => {
                 <div className={st.fourth}>
 
                 <div className={st.formcontent}>
-               <label htmlFor="">State</label>
+               <label htmlFor="">Country</label>
                <br />
                 <input type="text" name="" id="" placeholder="Enter Your State" value={country} onChange={countryData} />
                </div>

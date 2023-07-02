@@ -39,7 +39,8 @@ const EditEmp = () => {
         }).catch(()=>{
             console.log("did not get the data");
         })
-        navigate("/path-search")
+         window.location.assign("/path-search")
+         navigate("/path-search")
     }
 
 
@@ -138,7 +139,7 @@ const EditEmp = () => {
                 <div className={st.fourth}>
 
                 <div className={st.formcontent}>
-               <label htmlFor="">State</label>
+               <label htmlFor="">Country</label>
                <br />
                 <input type="text" name="" id="" placeholder="Enter Your State" value={country} onChange={countryData} />
                </div>

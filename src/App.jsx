@@ -11,19 +11,22 @@ import Popup from "./Projectx/Popup";
 import Quote from "./Projectx/Quote"
 import LoadingAnimation from "./Projectx/LoadingAnimation"
 import Links from "./Projectx/Links";
-
+import LoginCode from "./Components/LoginCode"
 
 const App = () => {
   return (
     <div>
+   {/* <LoginValidation/> */}
+{/* <LoginCode/> */}
       {/* <Quote/> */}
       {/* <LoadingAnimation/> */}
       
       <BrowserRouter>
    
            <Routes> 
+            
            <Route path="/" element={<LoginValidation />} />
-           <Route path="/" element={<Home/>} /> 
+           <Route path="/home" element={<Home/>} /> 
       
           <Route path="/path-home" element={<Home/>}></Route>
           <Route path="/path-search" element={<Search/>}></Route>

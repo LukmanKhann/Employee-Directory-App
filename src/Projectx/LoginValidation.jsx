@@ -1,8 +1,34 @@
 import { Link } from "react-router-dom"
 import style from "./login.module.css"
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 const Loginvalidation = () => {
 
-
+let [username,setUsername] = useState("")
+let [password,setPassword] = useState("")
+let [loginerror,setLoginerror] = useState(false)
+let navigate = useNavigate()
+let usernameData =(e)=>{
+  setUsername(e.target.value)
+}
+let passwordData =(e)=>{
+  setPassword(e.target.value)
+}
+let loginerrorData =(e)=>{
+  setLoginerror(e.target.value)
+}
+let formhandle = (e)=>{
+         e.preventDefault();
+  if(username==="root001@gmail.com" && password ==="admin"){
+    setLoginerror(false)
+    // alert("Login Successfull");
+    navigate("/home")
+  }
+  else{
+    setLoginerror(true)
+    alert("Invalid Username/Password")
+  }
+}
 
 
 
@@ -24,20 +50,18 @@ const Loginvalidation = () => {
                   <h3 id={style.signupheading}>Sing up</h3>
                    <div className={style.formsection}>
                     <label htmlFor="" >Username : </label>
-                    <input type="text" name="" id="" placeholder="Username" />
+                    <input type="text" name="" id="" placeholder="Username" value={username} onChange={usernameData} />
                    </div>
                    <div className={style.formsection}>
                     <label htmlFor="">Passoword : </label>
-                    <input type="text" name="" id="" placeholder="Password" />
+                    <input type="text" name="" id="" placeholder="Password" value={password} onChange={passwordData} />
                     
                    </div>
                   
                    <p><a href="">Forget Passowrd</a></p>
                    <button id={style.createuserbtn}>Create</button>
                    <div id={style.loginbtn}>
-                    <button  className={style.btn}>
-                      <Link to={'/path-home'}>Login</Link>
-                    </button>
+                    <button  className={style.btn} onClick={formhandle}>Login</button>
                    </div>
 
                 </form>

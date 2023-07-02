@@ -11,7 +11,6 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "employees")
-
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,17 +22,17 @@ private String lastname;
 private String email;
 private long mobile;
 @Column(name = "date_of_birth")
-private LocalDate dateofbirth;
+private String dateofbirth;
 private String gender;
 private String address;
-private String country;
+private String State;
 private String city;
 private String skills;
  public Employee() {
 	 
  }
-public Employee(String firstname, String lastname, String email, long mobile, LocalDate dateofbirth, String gender,
-		String address, String country, String city, String skills) {
+public Employee(String firstname, String lastname, String email, long mobile, String dateofbirth, String gender,
+		String address, String state, String city, String skills) {
 	super();
 	this.firstname = firstname;
 	this.lastname = lastname;
@@ -42,7 +41,7 @@ public Employee(String firstname, String lastname, String email, long mobile, Lo
 	this.dateofbirth = dateofbirth;
 	this.gender = gender;
 	this.address = address;
-	this.country = country;
+	this.State=state;
 	this.city = city;
 	this.skills = skills;
 }
@@ -76,10 +75,10 @@ public long getMobile() {
 public void setMobile(long mobile) {
 	this.mobile = mobile;
 }
-public LocalDate getDateofbirth() {
+public String getDateofbirth() {
 	return dateofbirth;
 }
-public void setDateofbirth(LocalDate dateofbirth) {
+public void setDateofbirth(String dateofbirth) {
 	this.dateofbirth = dateofbirth;
 }
 public String getGender() {
@@ -94,12 +93,11 @@ public String getAddress() {
 public void setAddress(String address) {
 	this.address = address;
 }
-
-public String getCountry() {
-	return country;
+public String getState() {
+	return State;
 }
-public void setCountry(String country) {
-	this.country = country;
+public void setState(String state) {
+	State = state;
 }
 public String getCity() {
 	return city;

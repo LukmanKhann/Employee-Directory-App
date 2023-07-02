@@ -73,13 +73,14 @@ const Search = () => {
                         {content.map((x)=>{
                             return(
                          <tr>
+                            {/* <td>{x.id}</td> */}
                          <td>{x.firstname}</td>
                          <td>{x.lastname}</td>
                          <td>{x.mobile}</td>
                          <td>{x.email}</td>
                          <td>{x.gender}</td>
                          <td>{x.dateofbirth}</td>
-                         <td>{x.state}</td>
+                         <td>{x.country}</td>
                          <td>{x.city}</td>
                          <td><button id={style.editbutton}><Link to={`/path-editemployee/${x.id}`} >Edit</Link></button > <button id={style.deletebutton} onClick={()=>{deletedata(x.id)}}>delete</button></td>
                          {/* <td>{x.address}</td> */}
