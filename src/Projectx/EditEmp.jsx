@@ -16,7 +16,7 @@ const EditEmp = () => {
     let{index} = useParams()
     console.log(index);
     useEffect(()=>{
-        axios.get(`http://localhost:8080/api/v1/employees${index}`).then((response)=>{
+        axios.get(`http://localhost:8080/api/v1/employees/${index}`).then((response)=>{
             console.log("got the data");
             console.log(response.data);
             setFirstname(response.data.firstname)
@@ -34,12 +34,12 @@ const EditEmp = () => {
     
     let formhandle=()=>{
         let payload= {firstname,lastname,email,mobile,dob,gender,city,country}
-        axios.put(`http://localhost:8080/api/v1/employees${index}`,payload).then(()=>{
+        axios.put(`http://localhost:8080/api/v1/employees/${index}`,payload).then(()=>{
             console.log("got the data");
         }).catch(()=>{
             console.log("did not get the data");
         })
-        navigate("/path-sear")
+        navigate("/path-search")
     }
 
 

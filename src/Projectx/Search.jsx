@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import style from "./search.module.css"
 import axios from "axios"
+import { Link } from "react-router-dom"
 const Search = () => {
     let [content ,setContent] = useState([])
     useEffect(()=>{
@@ -14,7 +15,10 @@ const Search = () => {
         })
 
     },[])
-
+    let deletedata = (value)=>{
+        axios.delete(`http://localhost:8080/api/v1/employees/${value}`)
+        window.location.assign("/path-search")
+    }
 
 
 
@@ -30,7 +34,7 @@ const Search = () => {
                 
                     <div id={style.mainbox}>
             <div id={style.btnemp}>
-            <h2 id={style.searchemp}>Search Employee</h2>
+            <h2 id={style.searchemp}><i class="fa-solid fa-users"></i>Search Employee</h2>
             <button>Add Employee</button>
             </div>
             <div id={style.namesearch}>
@@ -77,6 +81,7 @@ const Search = () => {
                          <td>{x.dateofbirth}</td>
                          <td>{x.state}</td>
                          <td>{x.city}</td>
+                         <td><button id={style.editbutton}><Link to={`/path-editemployee/${x.id}`} >Edit</Link></button > <button id={style.deletebutton} onClick={()=>{deletedata(x.id)}}>delete</button></td>
                          {/* <td>{x.address}</td> */}
                      </tr>
                           )  

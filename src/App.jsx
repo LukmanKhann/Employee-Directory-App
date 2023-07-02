@@ -19,7 +19,7 @@ const App = () => {
       {/* <Quote/> */}
       {/* <LoadingAnimation/> */}
       
-      {/* <BrowserRouter>
+      <BrowserRouter>
    
            <Routes> 
            <Route path="/" element={<LoginValidation />} />
@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/path-home" element={<Home/>}></Route>
           <Route path="/path-search" element={<Search/>}></Route>
           <Route path="/path-createemployee" element={<CreateEmp/>} ></Route>
-          <Route path="/path-editemployee" element ={<EditEmp/>}></Route>
+          <Route path="/path-editemployee/:index" element ={<EditEmp/>}></Route>
           <Route path="/path-image" element={<Image/>}></Route>
           <Route path="/path-slider" element={<Slider/>}></Route>
           <Route path="/path-popup" element={<Popup/>}></Route>
@@ -37,14 +37,14 @@ const App = () => {
           <Route path="/path-link" element={<Links/>}></Route>
         </Routes>
        
-      </BrowserRouter> */}
+      </BrowserRouter>
       {/* <Links/> */}
       {/* <CreateEmp/> */}
       {/* <Search/> */}
       {/* <Image/> */}
       {/* <Slider/> */}
    {/* <Popup/> */}
-   <EditEmp/>
+   {/* <EditEmp/> */}
    
     </div>
   )
