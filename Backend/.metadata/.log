@@ -2651,3 +2651,15 @@ Binding(CTRL+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-02 16:47:29.341
+!MESSAGE Classpath changed for project: springboot-backend
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-02 16:50:45.709
+!MESSAGE Classpath changed for project: springboot-backend
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-02 17:17:35.804
+!MESSAGE Classpath changed for project: springboot-backend
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-02 17:23:44.498
+!MESSAGE Classpath changed for project: springboot-backend

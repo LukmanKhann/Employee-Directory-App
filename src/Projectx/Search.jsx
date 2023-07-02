@@ -68,7 +68,7 @@ const Search = () => {
                      <tbody>
                         {content.map((x)=>{
                             return(
-                         <tr key={x.id}>
+                         <tr>
                          <td>{x.firstname}</td>
                          <td>{x.lastname}</td>
                          <td>{x.mobile}</td>

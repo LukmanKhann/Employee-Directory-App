@@ -13,9 +13,7 @@ const CreateEmp = () => {
     let [country,setCountry] = useState("")
     let navigate = useNavigate()
 
-    let formhandle=()=>{
-  
-      
+    let formhandle=()=>{  
       let payload= {firstname,lastname,email,mobile,dob,gender,city,country}
       axios.post("http://localhost:8080/api/v1/employees",payload).then((response)=>{
         console.log("Posted Successfully");

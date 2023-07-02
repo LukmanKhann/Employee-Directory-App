@@ -19,7 +19,7 @@ const App = () => {
       {/* <Quote/> */}
       {/* <LoadingAnimation/> */}
       
-      <BrowserRouter>
+      {/* <BrowserRouter>
    
            <Routes> 
            <Route path="/" element={<LoginValidation />} />
@@ -37,13 +37,14 @@ const App = () => {
           <Route path="/path-link" element={<Links/>}></Route>
         </Routes>
        
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <Links/> */}
       {/* <CreateEmp/> */}
       {/* <Search/> */}
       {/* <Image/> */}
       {/* <Slider/> */}
    {/* <Popup/> */}
+   <EditEmp/>
    
     </div>
   )
