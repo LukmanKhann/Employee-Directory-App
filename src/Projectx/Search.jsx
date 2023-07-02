@@ -26,8 +26,7 @@ const Search = () => {
   return (
     <div>
         
-        {content.map((x)=>{
-            return(
+        
                 
                     <div id={style.mainbox}>
             <div id={style.btnemp}>
@@ -67,39 +66,23 @@ const Search = () => {
                         </tr>
                      </thead>
                      <tbody>
-                        <tr>
-                            <td>{x.firstname}</td>
-                            <td>{x.lastname}</td>
-                            <td>{x.mobile}</td>
-                            <td>{x.email}</td>
-                            <td>{x.gender}</td>
-                            <td>{x.dateofbirth}</td>
-                            <td>{x.state}</td>
-                            <td>{x.city}</td>
-                            {/* <td>{x.address}</td> */}
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                        </tr>
+                        {content.map((x)=>{
+                            return(
+                         <tr key={x.id}>
+                         <td>{x.firstname}</td>
+                         <td>{x.lastname}</td>
+                         <td>{x.mobile}</td>
+                         <td>{x.email}</td>
+                         <td>{x.gender}</td>
+                         <td>{x.dateofbirth}</td>
+                         <td>{x.state}</td>
+                         <td>{x.city}</td>
+                         {/* <td>{x.address}</td> */}
+                     </tr>
+                          )  
+                        })}
+                        
+                       
                        
                      </tbody>
 
@@ -108,8 +91,7 @@ const Search = () => {
 
         </div>
                
-            )
-        })}
+         
       
     </div>
   )
