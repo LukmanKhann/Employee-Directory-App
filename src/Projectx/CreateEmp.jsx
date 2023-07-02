@@ -12,6 +12,20 @@ const CreateEmp = () => {
     let [city,setCity] = useState("")
     let [country,setCountry] = useState("")
     let navigate = useNavigate()
+
+    let formhandle=()=>{
+  
+      
+      let payload= {firstname,lastname,email,mobile,dob,gender,city,country}
+      axios.post("http://localhost:8080/api/v1/employees",payload).then((response)=>{
+        console.log("Posted Successfully");
+        console.log(response.data);
+        
+      }).catch(()=>{
+        console.log("Error Something went wrong");
+      })
+      navigate("/path-search")
+    }
     let firstnameData = (e)=>{
       setFirstname(e.target.value)
     }
@@ -37,16 +51,7 @@ const CreateEmp = () => {
       setCountry(e.target.value)
     }
 
-    let formhandle=()=>{
-      axios.post("http://localhost:8080/api/v1/employees").then((response)=>{
-        console.log("Posted Successfully");
-        console.log(response.data);
-        
-      }).catch(()=>{
-        console.log("Error Something went wrong");
-      })
-      navigate("/path-editemployee")
-    }
+   
 
 
 

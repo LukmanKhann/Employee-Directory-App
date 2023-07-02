@@ -4,6 +4,7 @@ import axios from "axios"
 const Search = () => {
     let [content ,setContent] = useState([])
     useEffect(()=>{
+      
         axios.get("http://localhost:8080/api/v1/employees").then((response)=>{
             console.log(response.data);
             console.log("got the data");
