@@ -22,11 +22,11 @@ const App = () => {
       {/* <LoadingAnimation/> */}
       
       <BrowserRouter>
-   
+   {/* <Home/> */}
            <Routes> 
-            
            <Route path="/" element={<LoginValidation />} />
            <Route path="/home" element={<Home/>} /> 
+           
       
           <Route path="/path-home" element={<Home/>}></Route>
           <Route path="/path-search" element={<Search/>}></Route>

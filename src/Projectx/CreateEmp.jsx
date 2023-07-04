@@ -62,7 +62,7 @@ const CreateEmp = () => {
      <div className={st.superdiv}>
      
       <div id={st.mainsection}>
-        <h6>Create Employee</h6>
+      <h6><i class="fa-solid fa-users"></i>  Create Employee</h6>
         <div id={st.formsection}>
              <form action="">
               

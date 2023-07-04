@@ -2,8 +2,10 @@ import { useEffect, useState } from "react"
 import style from "./search.module.css"
 import axios from "axios"
 import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 const Search = () => {
     let [content ,setContent] = useState([])
+    let navigate = useNavigate()
     useEffect(()=>{
       
         axios.get("http://localhost:8080/api/v1/employees").then((response)=>{
@@ -20,6 +22,10 @@ const Search = () => {
         window.location.assign("/path-search")
     }
 
+      let handle =(e)=>{
+          e.preventDefault()
+          navigate("/path-createemployee")
+      }
 
 
 
@@ -34,8 +40,9 @@ const Search = () => {
                 
                     <div id={style.mainbox}>
             <div id={style.btnemp}>
-            <h2 id={style.searchemp}><i class="fa-solid fa-users"></i>Search Employee</h2>
-            <button>Add Employee</button>
+            <h2 id={style.searchemp}><i class="fa-brands fa-searchengin"></i>Search Employee</h2>
+            
+            <button onClick={handle}>Add Employee</button>
             </div>
             <div id={style.namesearch}>
                <div>
@@ -50,6 +57,7 @@ const Search = () => {
                 </div>
                 <button className={style.btn1}>Search</button>
                 <button className={style.btn2}>Clear</button>
+                <Link to={"/path-home"}><i class="fa-solid fa-house" id={style.fahome}></i></Link>
 
             </div>
 
