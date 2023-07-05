@@ -105,9 +105,9 @@ const CreateEmp = () => {
                <div className={st.malefemale}>
                       <label htmlFor="">Gender</label>
                       <br />
-               Male   <input type="radio" name="" id="" className={st.malefemale} value={gender} onChange={genderData}/>
+               Male   <input type="radio" checked ={gender==="male"} name="" id="" className={st.malefemale} value="male" onChange={genderData}/>
                <br />
-              Female <input type="radio" name="" id="" className={st.malefemale}/>
+              Female <input type="radio" name="" id="" checked={gender==="female"} className={st.malefemale} value="female" onChange={genderData}/>
                </div>
                </div>
                
