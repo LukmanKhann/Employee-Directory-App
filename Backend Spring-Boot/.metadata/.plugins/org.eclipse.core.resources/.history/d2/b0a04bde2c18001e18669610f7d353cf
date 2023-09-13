@@ -1,5 +1,0 @@
-package org.jsp.springboot.repositroy;
-
-public interface EmployeeRepositroy {
-
-}
